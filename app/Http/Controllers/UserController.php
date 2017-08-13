@@ -23,7 +23,8 @@ class UserController extends Controller
         //Get all users
        // $userAccounts = User::paginate(15);
         // Return a collection of $task with pagination
-        return 'hi ma!';//$this->response->withPaginator($userAccounts, new  UserAccountTransformer());
+        $this->response = 'hi ma!';
+        return $this->response;//$this->response->withPaginator($userAccounts, new  UserAccountTransformer());
     }
 
     public function show($id)
