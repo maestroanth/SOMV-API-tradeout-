@@ -168,6 +168,7 @@ return [
          * Package Service Providers...
          */
         Spatie\Fractal\FractalServiceProvider::class,
+        SpatieFractalFractalServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         EllipseSynergie\ApiResponse\Laravel\ResponseServiceProvider::class,
         /*
