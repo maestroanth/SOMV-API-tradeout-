@@ -19,6 +19,7 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'ab9b68c5b1def6f80e89be13eb0a4be3' => __DIR__ . '/..' . '/spatie/laravel-fractal/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -60,6 +61,8 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'Spatie\\Fractalistic\\' => 20,
+            'Spatie\\Fractal\\' => 15,
         ),
         'R' => 
         array (
@@ -210,6 +213,14 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'Symfony\\Bridge\\PsrHttpMessage\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
+        ),
+        'Spatie\\Fractalistic\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/fractalistic/src',
+        ),
+        'Spatie\\Fractal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-fractal/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -373,6 +384,7 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -383,6 +395,7 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Transformer\\UserTransformer' => __DIR__ . '/../..' . '/app/Transformer/UserTransformer.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
@@ -3014,6 +3027,14 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\Fractal\\Console\\Commands\\TransformerMakeCommand' => __DIR__ . '/..' . '/spatie/laravel-fractal/src/Console/Commands/TransformerMakeCommand.php',
+        'Spatie\\Fractal\\Fractal' => __DIR__ . '/..' . '/spatie/laravel-fractal/src/Fractal.php',
+        'Spatie\\Fractal\\FractalFacade' => __DIR__ . '/..' . '/spatie/laravel-fractal/src/FractalFacade.php',
+        'Spatie\\Fractal\\FractalServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-fractal/src/FractalServiceProvider.php',
+        'Spatie\\Fractalistic\\ArraySerializer' => __DIR__ . '/..' . '/spatie/fractalistic/src/ArraySerializer.php',
+        'Spatie\\Fractalistic\\Exceptions\\InvalidTransformation' => __DIR__ . '/..' . '/spatie/fractalistic/src/Exceptions/InvalidTransformation.php',
+        'Spatie\\Fractalistic\\Exceptions\\NoTransformerSpecified' => __DIR__ . '/..' . '/spatie/fractalistic/src/Exceptions/NoTransformerSpecified.php',
+        'Spatie\\Fractalistic\\Fractal' => __DIR__ . '/..' . '/spatie/fractalistic/src/Fractal.php',
         'Symfony\\Bridge\\PsrHttpMessage\\Factory\\DiactorosFactory' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Factory/DiactorosFactory.php',
         'Symfony\\Bridge\\PsrHttpMessage\\Factory\\HttpFoundationFactory' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/Factory/HttpFoundationFactory.php',
         'Symfony\\Bridge\\PsrHttpMessage\\HttpFoundationFactoryInterface' => __DIR__ . '/..' . '/symfony/psr-http-message-bridge/HttpFoundationFactoryInterface.php',
