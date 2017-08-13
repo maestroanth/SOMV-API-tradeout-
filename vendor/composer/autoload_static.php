@@ -79,6 +79,7 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'L' => 
         array (
             'League\\OAuth2\\Server\\' => 21,
+            'League\\Fractal\\' => 15,
             'League\\Flysystem\\' => 17,
             'League\\Event\\' => 13,
             'Lcobucci\\JWT\\' => 13,
@@ -99,6 +100,11 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         array (
             'Firebase\\JWT\\' => 13,
             'Faker\\' => 6,
+        ),
+        'E' => 
+        array (
+            'EllipseSynergie\\ApiResponse\\Tests\\' => 34,
+            'EllipseSynergie\\ApiResponse\\' => 28,
         ),
         'D' => 
         array (
@@ -233,6 +239,10 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         array (
             0 => __DIR__ . '/..' . '/league/oauth2-server/src',
         ),
+        'League\\Fractal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/fractal/src',
+        ),
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
@@ -276,6 +286,14 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
+        ),
+        'EllipseSynergie\\ApiResponse\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ellipsesynergie/api-response/tests',
+        ),
+        'EllipseSynergie\\ApiResponse\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ellipsesynergie/api-response/src',
         ),
         'Dotenv\\' => 
         array (
@@ -369,8 +387,13 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
-        'CreatePasswordResetsTable' => __DIR__ . '/../..',
-        'CreateUsersTable' => __DIR__ . '/../..',
+        'CreateOauthAccessTokensTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000002_create_oauth_access_tokens_table.php',
+        'CreateOauthAuthCodesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000001_create_oauth_auth_codes_table.php',
+        'CreateOauthClientsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000004_create_oauth_clients_table.php',
+        'CreateOauthPersonalAccessClientsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000005_create_oauth_personal_access_clients_table.php',
+        'CreateOauthRefreshTokensTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_01_000003_create_oauth_refresh_tokens_table.php',
+        'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/old/2014_10_12_100000_create_password_resets_table.php',
+        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/old/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',
@@ -430,6 +453,14 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'Dotenv\\Exception\\ValidationException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ValidationException.php',
         'Dotenv\\Loader' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Loader.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'EllipseSynergie\\ApiResponse\\AbstractResponse' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/AbstractResponse.php',
+        'EllipseSynergie\\ApiResponse\\Contracts\\Response' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Contracts/Response.php',
+        'EllipseSynergie\\ApiResponse\\Laravel\\LumenServiceProvider' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Laravel/LumenServiceProvider.php',
+        'EllipseSynergie\\ApiResponse\\Laravel\\Middleware\\ParseInclude' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Laravel/Middleware/ParseInclude.php',
+        'EllipseSynergie\\ApiResponse\\Laravel\\Response' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Laravel/Response.php',
+        'EllipseSynergie\\ApiResponse\\Laravel\\ResponseServiceProvider' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Laravel/ResponseServiceProvider.php',
+        'EllipseSynergie\\ApiResponse\\Serializer\\Serializer' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Serializer/Serializer.php',
+        'EllipseSynergie\\ApiResponse\\Testing\\Laravel\\AddTestingSupportForInclude' => __DIR__ . '/..' . '/ellipsesynergie/api-response/src/Testing/Laravel/AddTestingSupportForInclude.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Luhn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Luhn.php',
         'Faker\\DefaultGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/DefaultGenerator.php',
@@ -1824,6 +1855,27 @@ class ComposerStaticInit9b68b7bbb0014473eea98535f440eb98
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'League\\Fractal\\Manager' => __DIR__ . '/..' . '/league/fractal/src/Manager.php',
+        'League\\Fractal\\Pagination\\Cursor' => __DIR__ . '/..' . '/league/fractal/src/Pagination/Cursor.php',
+        'League\\Fractal\\Pagination\\CursorInterface' => __DIR__ . '/..' . '/league/fractal/src/Pagination/CursorInterface.php',
+        'League\\Fractal\\Pagination\\DoctrinePaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/DoctrinePaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\IlluminatePaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/IlluminatePaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\PagerfantaPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PagerfantaPaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\PaginatorInterface' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PaginatorInterface.php',
+        'League\\Fractal\\Pagination\\PhalconFrameworkPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/PhalconFrameworkPaginatorAdapter.php',
+        'League\\Fractal\\Pagination\\ZendFrameworkPaginatorAdapter' => __DIR__ . '/..' . '/league/fractal/src/Pagination/ZendFrameworkPaginatorAdapter.php',
+        'League\\Fractal\\ParamBag' => __DIR__ . '/..' . '/league/fractal/src/ParamBag.php',
+        'League\\Fractal\\Resource\\Collection' => __DIR__ . '/..' . '/league/fractal/src/Resource/Collection.php',
+        'League\\Fractal\\Resource\\Item' => __DIR__ . '/..' . '/league/fractal/src/Resource/Item.php',
+        'League\\Fractal\\Resource\\NullResource' => __DIR__ . '/..' . '/league/fractal/src/Resource/NullResource.php',
+        'League\\Fractal\\Resource\\ResourceAbstract' => __DIR__ . '/..' . '/league/fractal/src/Resource/ResourceAbstract.php',
+        'League\\Fractal\\Resource\\ResourceInterface' => __DIR__ . '/..' . '/league/fractal/src/Resource/ResourceInterface.php',
+        'League\\Fractal\\Scope' => __DIR__ . '/..' . '/league/fractal/src/Scope.php',
+        'League\\Fractal\\Serializer\\ArraySerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/ArraySerializer.php',
+        'League\\Fractal\\Serializer\\DataArraySerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/DataArraySerializer.php',
+        'League\\Fractal\\Serializer\\JsonApiSerializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/JsonApiSerializer.php',
+        'League\\Fractal\\Serializer\\SerializerAbstract' => __DIR__ . '/..' . '/league/fractal/src/Serializer/SerializerAbstract.php',
+        'League\\Fractal\\TransformerAbstract' => __DIR__ . '/..' . '/league/fractal/src/TransformerAbstract.php',
         'League\\OAuth2\\Server\\AuthorizationServer' => __DIR__ . '/..' . '/league/oauth2-server/src/AuthorizationServer.php',
         'League\\OAuth2\\Server\\AuthorizationValidators\\AuthorizationValidatorInterface' => __DIR__ . '/..' . '/league/oauth2-server/src/AuthorizationValidators/AuthorizationValidatorInterface.php',
         'League\\OAuth2\\Server\\AuthorizationValidators\\BearerTokenValidator' => __DIR__ . '/..' . '/league/oauth2-server/src/AuthorizationValidators/BearerTokenValidator.php',
