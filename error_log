@@ -1,0 +1,21 @@
+[01-Aug-2017 16:13:13 America/New_York] PHP Notice:  Use of undefined constant SOMV - assumed 'SOMV' in /home/netdijwk/public_html/sageofthemultiverse.com/bootstrap/app.php on line 31
+[01-Aug-2017 16:13:13 America/New_York] PHP Notice:  Use of undefined constant SOMV - assumed 'SOMV' in /home/netdijwk/public_html/sageofthemultiverse.com/bootstrap/app.php on line 36
+[01-Aug-2017 16:13:13 America/New_York] PHP Notice:  Use of undefined constant SOMV - assumed 'SOMV' in /home/netdijwk/public_html/sageofthemultiverse.com/bootstrap/app.php on line 41
+[01-Aug-2017 16:13:13 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class 0 does not exist in /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('0')
+#1 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(245): Illuminate\Container\Container->build(0)
+#2 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(726): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Con in /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[01-Aug-2017 16:13:23 America/New_York] PHP Notice:  Use of undefined constant SOMV - assumed 'SOMV' in /home/netdijwk/public_html/sageofthemultiverse.com/bootstrap/app.php on line 31
+[01-Aug-2017 16:13:23 America/New_York] PHP Notice:  Use of undefined constant SOMV - assumed 'SOMV' in /home/netdijwk/public_html/sageofthemultiverse.com/bootstrap/app.php on line 36
+[01-Aug-2017 16:13:23 America/New_York] PHP Notice:  Use of undefined constant SOMV - assumed 'SOMV' in /home/netdijwk/public_html/sageofthemultiverse.com/bootstrap/app.php on line 41
+[01-Aug-2017 16:13:23 America/New_York] PHP Fatal error:  Uncaught ReflectionException: Class 0 does not exist in /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('0')
+#1 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(245): Illuminate\Container\Container->build(0)
+#2 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(726): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#3 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Con in /home/netdijwk/public_html/sageofthemultiverse.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[04-Aug-2017 20:44:59 UTC] PHP Fatal error:  Cannot declare class MyClass, because the name is already in use in /home/netdijwk/public_html/sageofthemultiverse.com/routes/web.php on line 85

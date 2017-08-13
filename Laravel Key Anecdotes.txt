@@ -1,0 +1,18 @@
+Laravel Key Anecdotes:
+!* = not a factual anecdote yet
+/* = good knowledge comment in the actual code
+Middleware is all registered in Kernel.php
+Middleware is separated in web/api and route middleware
+Difference between Controllers and Middleware? 
+-- Controllers are more tightly coupled to the framework. 
+-- Controllers are specifically for request and return responses. 
+    -- Middleware can wrap around this further to properly prepare the requests and responses for the middleware
+
+Middleware is Regestered in Kernel.php, controllers and routes are registered in routes/api.phpORweb.php
+
+URL's and associative arrays are cap sensitive remember (unless I function them to not be!)
+
+!* I think the Closure $next thing is just so you can dynamically name which middleware function or whatever you want to call next (best guess in usage so far)
+
+/*declaring routes is interchangeable in this file and in the
+    usercontroller.php as long as you get the different syntaxes right in each location*/
